@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MF STUDIO</title>
+        <style>
+            body {
+                font-family: 'DFKai-SB', sans-serif;
+                background-color: #f0f8ff;
+                color: #333;
+                margin: 0;
+                padding: 0;
+            }
+            header {
+                text-align: center;
+                padding: 20px;
+                background-color: green;
+            }
+            header img {
+                width: 100px;
+                height: 100px;
+            }
+            header h1, header h2, header h3 {
+                color: white;
+            }
+            header h1 {
+                font-size: 60px;
+            }
+            header h2 {
+                font-size: 40px;
+            }
+            header h3 {
+                font-size: 36px;
+            }
+            .header-alt {
+                text-align: center;
+                padding: 20px;
+                background-color: skyblue;
+            }
+            .header-alt img {
+                width: 100px;
+                height: 100px;
+            }
+            .header-alt h1 {
+                font-size: 60px;
+                color: green;
+            }
+            .header-alt h2 {
+                font-size: 40px;
+                color: orange;
+            }
+            .header-alt h3 {
+                font-size: 36px;
+                color: yellowgreen;
+            }
+            .content {
+                padding: 20px;
+                background-color: #d8f3dc;
+                display: none;
+            }
+            .content.active {
+                display: block;
+            }
+            .content h4 {
+                font-size: 30px;
+                color: black;
+                margin-top: 20px;
+            }
+            .content h5 {
+                font-size: 24px;
+                color: black;
+                margin-top: 15px;
+            }
+            .content p {
+                font-size: 24px;
+                color: black;
+                margin: 10px 0;
+            }
+            .button {
+                font-size: 24px;
+                color: white;
+                background-color: blue;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                text-decoration: none;
+                display: inline-block;
+                margin: 10px 0;
+            }
+            .button:hover {
+                background-color: darkblue;
+            }
+            .subscribe-button {
+                font-size: 30px;
+                color: white;
+                background-color: red;
+                padding: 15px 30px;
+                border: none;
+                border-radius: 5px;
+                text-decoration: none;
+                display: inline-block;
+                margin: 20px auto;
+                display: block;
+                text-align: center;
+            }
+            .subscribe-button:hover {
+                background-color: darkred;
+            }
+            .video-container {
+                text-align: center;
+                margin: 20px 0;
+            }
+            .video-container iframe {
+                width: 80%;
+                height: 450px;
+                border: none;
+                border-radius: 10px;
+            }
+            nav {
+                text-align: center;
+                background-color: #333;
+                padding: 10px;
+            }
+            nav a {
+                font-size: 20px;
+                color: white;
+                text-decoration: none;
+                padding: 10px 20px;
+                display: inline-block;
+            }
+            nav a:hover {
+                background-color: darkblue;
+            }
+            footer {
+                text-align: center;
+                background-color: black;
+                font-size:20px
+                color:white
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>山老闆x廢物</h1>
+            <img src="https://yt3.googleusercontent.com/rAyR52Fa-4rIUfgfVY-zY9YHQ4nARXz3-oBt5cnNr3pI2IOJf6Xnz44tnQen43NwjXhMGN6U0Q=s160-c-k-c0x00ffffff-no-rj" alt="首頁圖片">
+        </header>
+        <nav>
+            <a href="#home" onclick="showPage('home')">首頁</a>
+            <a href="#page1" onclick="showPage('page1')">廢物</a>
+            <a href="#page2" onclick="showPage('page2')">山老闆</a>
+        </nav>
+        
+        <div id="home" class="content active">
+            <h2>歡迎來到MF Studio</h2>
+            <p>這裡是山老闆和廢物的頻道，探索有趣的知識與學習程式！</p>
+            <a class="button" href="#page2" onclick="showPage('page2')">了解更多關於山老闆</a>
+            <a class="button" href="#page1" onclick="showPage('page1')">了解更多關於廢物</a>
+        </div>
+        
+        <div id="page1" class="content">
+            <div class="header-alt">
+                <img src="https://yt3.googleusercontent.com/AvjlfV18lFMOeOvtoo2FbXqbEDbWcHID2A807cTa1leV_Uz7r7w0F-rAfdeVZG5k2ep5DRCbHw=s160-c-k-c0x00ffffff-no-rj" alt="廢物">
+                <h1>廢物</h1>
+                <h2>想學程式嗎？來這就對了！</h2>
+                <h3>「想不到題材，就由觀眾決定！」</h3>
+            </div>
+            
+            <h4>簡介</h4>
+            <p>本頻道主要拍攝影片剪輯教學、知識與程式教學</p>
+            <p>歡迎按讚訂閱分享喔~</p>
+    
+            <h4>里程碑</h4>
+            <p>2024.01.01 頻道創建</p>
+            <p>2024.04.01 100訂閱</p>
+            <p>2024.06.14 200訂閱</p>
+
+            <h4>特點</h4>
+            <h5>特點一：幽默的風格</h5>
+            <p>這個頻道的影片都很幽默，保證你大笑！</p>
+            <h5>特點二：課業第一，拍片第二</h5>
+            <p>先顧好學業才拍影片的一個版主</p>
+            <h5>特點三：貼心</h5>
+            <p>教學影片都有附上連結</p>
+            <h5>特點四：兩年的經驗</h5>
+            <p>曾有三個失敗的頻道，從中學習技巧。</p>
+
+            <h4>試聽內容</h4>
+            <div class="video-container">
+                <iframe src="https://youtu.be/UtSLRSmwwAI" allowfullscreen></iframe>
+                <h1>查看頻道</h1>
+                <a class="subscribe-button" href="https://youtube.com/@FayWooooo">進入YouTube頻道</a>
+            </div>
+        </div>
+        
+        <div id="page2" class="content">
+            <div class="header-alt">
+                <img src="https://yt3.googleusercontent.com/Wzmb2Uxr7FrnB-PwR2oa5yKpBqZFFXHv5vMVJ4CeKqJZUHrIxRYQqj5A4Ue_OoWLVco35-r0OA" alt="山老闆">
+                <h1>山老闆</h1>
+                <h2>學校不會教的知識，都在這裡！</h2>
+                <h3>「失敗沒關係，重來就好。但是，記得從錯誤中學到新技巧！」</h3>
+            </div>
+            
+            <h4>簡介</h4>
+            <p>在這個頻道裡，您將會看到一些有趣的知識和心理障礙的種類介紹。</p>
+            <p>如果你喜歡我的影片，歡迎按讚、訂閱、開啟小鈴鐺並分享喔！</p>
+            <p>如果有想看的影片，可以留言給我喔！</p>
+            <p>留言不要觸犯法律、【YouTube社群規範】，也不要留一些垃圾話如「一起互相訂閱吧」</p>
+            <p>實話：國一、有個徹底失敗的頻道</p>
+    
+            <h4>里程碑</h4>
+            <p>2023.11.24 頻道創建</p>
+            <p>2023.12.26 100訂閱</p>
+            <p>2024.02.29 200訂閱</p>
+            <p>2024.05.16 300訂閱</p>
+            <p>2024.07.23 400訂閱</p>
+            
+            <h4>特點</h4>
+            <h5>特點一：獨特的知識</h5>
+            <p>在山老闆頻道裡面，你可以看到一些不為人所知的知識，保證滿滿收穫！</p>
+            <h5>特點二：根據時間拍</h5>
+            <p>有節慶時拍節慶，沒節慶時拍時事</p>
+            <h5>特點三：無不良內容</h5>
+            <p>影片內不罵刻意罵髒話，也沒有暴力與色情內容</p>
+            <h5>特點四：兩年的經驗</h5>
+            <p>曾有一個失敗的頻道，從中學習技巧。</p>
+
+            <h4>試聽內容</h4>
+            <div class="video-container">
+                <iframe src="https://youtu.be/Som8a8eFQf8" allowfullscreen></iframe>
+                <h1>查看頻道</h1>
+                <a class="subscribe-button" href="https://youtube.com/@mountain_boss">進入YouTube頻道</a>
+            </div>
+        </div>
+
+        <footer class="bottom">
+            <p>&copy; 2024 MF Studio</p>
+            <p>山老闆: <a href="mailto:mountainmasterboss@gmail.com">mountainmasterboss@gmail.com</a></p>
+            <p>廢物: <a href="mailto:faywooooo@gmail.com">faywooooo@gmail.com</a></p>
+        </footer>
+        <script>
+            function showPage(pageId) {
+                document.querySelectorAll('.content').forEach(function(content) {
+                    content.classList.remove('active');
+                });
+                document.getElementById(pageId).classList.add('active');
+            }
+        </script>
+    </body>
+</html>
